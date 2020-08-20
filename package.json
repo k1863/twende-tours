@@ -1,0 +1,30 @@
+{
+  "name": "twende-tours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css",
+    "watch:sass": "nodemon -e scss -x npm run compile:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k1863/twende-tours.git"
+  },
+  "keywords": [
+    "tours",
+    "travel",
+    "site"
+  ],
+  "author": "Ken Nzau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k1863/twende-tours/issues"
+  },
+  "homepage": "https://github.com/k1863/twende-tours#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {}
+}
