@@ -14,9 +14,46 @@
     <title>Twende-Tours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <!-- ---------------------------Navigation-Component------------------------ -->
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>01</span> About Twende</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span>Your benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span>Popular tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#popup" class="navigation__link"
+              ><span></span>05Book now</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- ---------------------------Header-Section------------------------------ -->
     <header class="header">
       <div class="header__logo-box">
-        <img src="/img/logo-white.png" alt="Logo" class="header__logo" />
+        <img src="/img/twende-logo-white.png" alt="Logo" class="header__logo" />
       </div>
       <div class="header__text-box">
         <h1 class="heading-primary">
@@ -26,73 +63,8 @@
         <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
       </div>
     </header>
-
-    <!--
-    <div class="grid-test">
-      <div class="row">
-        <div class="col-1-of-2">
-          Col 1 of 2
-        </div>
-        <div class="col-1-of-2">
-          Col 1  of 2
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-3">
-          Col 1 of 3
-        </div>
-        <div class="col-1-of-3">
-          Col 1 of 3
-        </div>
-        <div class="col-1-of-3">
-          Col 1 of 3
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-3">
-          Col 1 of 3
-        </div>
-        <div class="col-2-of-3">
-          Col 2 of 3
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-      </div>
-            <div class="row">
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-2-of-4">
-          Col 2 of 4
-        </div>
-    </div>
-       <div class="row">
-        <div class="col-1-of-4">
-          Col 1 of 4
-        </div>
-        <div class="col-3-of-4">
-          Col 3 of 4
-      </div>
-      </div>
-      </div>
-      -->
     <main>
-      <!-- ---------About Section--------- -->
+      <!-- ------------------------About Section--------------------------- -->
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
@@ -142,7 +114,8 @@
           </div>
         </div>
       </section>
-      <!---------- Features Section --------- -->
+
+      <!--------------------- Features Section --------------------- -->
       <section class="section-features">
         <div class="row">
           <div class="col-1-of-4">
@@ -195,7 +168,8 @@
           </div>
         </div>
       </section>
-      <!-- -----------------Tours Section-------------- -->
+
+      <!-- ---------------------Tours Section------------------------- -->
       <section class="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
@@ -230,7 +204,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -262,7 +236,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -294,7 +268,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -306,7 +280,7 @@
         </div>
       </section>
 
-      <!-- ................Stories Section.............. -->
+      <!-- ........................Stories Section........................... -->
       <section class="section-stories">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
@@ -370,7 +344,7 @@
           <a href="#" class="btn-text">Read all stories &rarr;</a>
         </div>
       </section>
-      <!-- ............... Booking Section.......................... -->
+      <!-- ......................... Booking Section.......................... -->
       <section class="section-booking">
         <div class="row">
           <div class="book">
@@ -439,6 +413,147 @@
           </div>
         </div>
       </section>
+
+      <!-- ----------------------Footer section----------------- -->
+      <footer class="footer">
+        <div class="footer__logo-box">
+          <img
+            src="/img/twende-logo-green-2x.png"
+            alt="Full logo"
+            class="footer__logo"
+          />
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="footer__navigation">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Company</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Contact us</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Careers</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Privacy policy</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Terms</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <p class="footer__copyright">
+              Built by
+              <a href="https://twitter.com/ken_nzau" class="footer__link"
+                >Ken Nzau</a
+              >
+              for his online course
+              <a href="#" class="footer__link">Advanced CSS and Sass</a>
+              Copyright &copy; by Jonas Schmedtmann. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Et eum, cupiditate, natus atque sint
+              expedita.
+            </p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- ----------------------Pop Up Component---------------------------- -->
+      <div id="popup" class="popup">
+        <div class="popup__content">
+          <div class="popup__left-box">
+            <img src="img/nat-8.jpg" alt="popup-img" class="popup__img" />
+            <img src="img/nat-9.jpg" alt="popup-img2" class="popup__img" />
+          </div>
+          <div class="popup__right-box">
+            <a href="#section-tours" class="popup__close">&times;</a>
+            <h2 class="heading-secondary u-margin-bottom-small">
+              Start Booking now
+            </h2>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Important &ndash; Please read our terms before booking
+            </h3>
+            <p class="popup__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+              a veniam fugit, et quae velit voluptates error, expedita fuga
+              optio aut nisi quidem dolores, ab eaque tempore ipsum? Incidunt,
+              natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Beatae aliquid quasi exercitationem reprehenderit minus eveniet
+              vero, sequi id adipisci voluptatem quibusdam fuga a natus totam
+              harum explicabo eum? Libero, culpa.
+            </p>
+            <a href="#popup" class="btn btn--green">Book now</a>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
+
+<!--
+    <div class="grid-test">
+      <div class="row">
+        <div class="col-1-of-2">
+          Col 1 of 2
+        </div>
+        <div class="col-1-of-2">
+          Col 1  of 2
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+        <div class="col-2-of-3">
+          Col 2 of 3
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+      </div>
+            <div class="row">
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-2-of-4">
+          Col 2 of 4
+        </div>
+    </div>
+       <div class="row">
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-3-of-4">
+          Col 3 of 4
+      </div>
+      </div>
+      </div>
+      -->
